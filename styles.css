@@ -26,6 +26,26 @@ body {
   background-color: var(--clr-bg);
 }
 
+.en, .es, #lang-es, #lang-en{
+  display: none;
+}
+
+#lang-en:checked ~ * .en{
+  display: inline;
+}
+
+#lang-en:checked ~ * .es{
+  display: none;
+}
+
+#lang-es:checked ~ * .en{
+  display: none;
+}
+
+#lang-es:checked ~ * .es{
+  display: inline;
+}
+
 .light {
   --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;
